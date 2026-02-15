@@ -1,0 +1,411 @@
+.catalyst-diagram {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* User Entry */
+.user-entry {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.user-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-label {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+/* Architecture Flow */
+.architecture-flow {
+  margin-bottom: 3rem;
+}
+
+.tier {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+.tier-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid;
+}
+
+.web-tier {
+  background: #f3e5f5;
+  border-color: #9c27b0;
+}
+
+.web-tier .tier-title {
+  border-color: #9c27b0;
+  color: #7b1fa2;
+}
+
+.app-tier {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.app-tier .tier-title {
+  border-color: #4caf50;
+  color: #388e3c;
+}
+
+.data-tier {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.data-tier .tier-title {
+  border-color: #2196f3;
+  color: #1976d2;
+}
+
+.backup-tier {
+  background: #fff3e0;
+  border-color: #ff9800;
+}
+
+.backup-tier .tier-title {
+  border-color: #ff9800;
+  color: #f57c00;
+}
+
+.tier-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ADC Box */
+.adc-box {
+  background: #fff;
+  border: 2px solid #9c27b0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.component-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.component-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-item {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.detail-note {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* API Gateway */
+.api-gateway-box {
+  background: #fff;
+  border: 2px solid #9c27b0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.arrow-down {
+  font-size: 2rem;
+  color: #9c27b0;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* App Tier Grid */
+.app-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.app-servers-box {
+  background: #fff;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.servers-list {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.server-item {
+  background: #e8f5e9;
+  border: 1px solid #4caf50;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2e7d32;
+}
+
+.component-note {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+.functions-box {
+  background: #fff;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Data Tier Grid */
+.data-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.data-category {
+  background: #fff;
+  border: 2px solid #2196f3;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.category-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.db-item {
+  background: #e3f2fd;
+  border: 1px solid #2196f3;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1565c0;
+}
+
+.category-note {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Backup Tier */
+.backup-box {
+  background: #fff;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+}
+
+.arrow-right {
+  font-size: 2rem;
+  color: #ff9800;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+.dr-site {
+  background: #fff;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+}
+
+.backup-tier .tier-content {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Supporting Services */
+.supporting-services {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.services-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.service-category {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-category-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.service-item {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+.service-note {
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* IaaS Layer */
+.iaas-layer {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #9c27b0;
+}
+
+.iaas-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #7b1fa2;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.iaas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.iaas-item {
+  background: #fff;
+  border: 1px solid #9c27b0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7b1fa2;
+}
+
+.iaas-item.highlight {
+  background: #f3e5f5;
+  border-color: #7b1fa2;
+  font-weight: 600;
+}
+
+.iaas-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .catalyst-diagram {
+    padding: 1.5rem;
+  }
+
+  .app-tier-grid,
+  .data-tier-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .backup-tier .tier-content {
+    flex-direction: column;
+  }
+
+  .arrow-right {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .iaas-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
